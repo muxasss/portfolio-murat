@@ -1,5 +1,184 @@
-.menu {
-    display: flex;
-    justify-content: space-around;
+body {
+    background-color: #001f3f;
+    font-family: Arial, sans-serif;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+details {
+    margin: 10px;
+    background-color: #273353;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    /* text-align: center; */
+    font-size: 20px;
+    padding: 5px 0;
+    /* background-color: #003a6d; */
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+
+p {
+    color: #ccc;
+    font-size: 18px;
+    text-align: left;
+    margin: 8px 0;
+}
+
+/* Иконка гамбургера для мобильных устройств */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/* Иконка поиска на мобильных устройствах */
+.Search-icon {
+    display: block; /* Показать иконку поиска на мобильных устройствах */
+    position: fixed;
+    top: 40px;
+    right: 40px; /* Позиция иконки поиска */
+    z-index: 15; /* Иконка поиска ниже по слоям */
+}
+
+/* Адаптивный дизайн для телефонов */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Элементы в колонку */
+        padding-bottom: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #001f3f;
+        visibility: hidden; /* Скрываем меню по умолчанию */
+        transform: translateY(-100%); /* Меню скрыто */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu.open {
+        visibility: visible; /* Меню становится видимым */
+        transform: translateY(0); /* Плавно появляется */
+    }
+
+    details {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .hamburger-menu {
+        display: block; /* Показать иконку гамбургера на мобильных устройствах */
+    }
+
+    .Search-icon {
+        display: block; /* Иконка поиска видна только на мобильных устройствах */
+    }
+
+    summary {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Стили для десктопов: скрываем иконку поиска */
+@media (min-width: 769px) {
+    .Search-icon {
+        display: none; /* Иконка поиска скрыта на десктопах */
+    }
+
+    .hamburger-menu {
+        display: none; /* Иконка гамбургера скрыта на десктопах */
+    }
+}
+
+/* Стили для изображения */
+.murat-photo {
+    height: 150px;
+    border-radius: 190px;
+    margin-left: 250px;
+    border: 5px solid;
+    border-color: #fff;
+}
+
+section h1 {
+    margin-top: -100px;
+    margin-left: 40px;
+    font-size: 50px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.orange {
+    background-color: #efc480;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    margin-left: 40px;
+}
+
+section h3 {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 55px;
+    margin-top: -40px;
+}
+
+.dok {
+    color: black;
+}
+
+.logo {
+    height: 100px;
+    margin-left: 170px;
+}
+
+section.second-section {
+    margin-top: 150px;
+    background-color: #fff;
+    height: 800px;
+}
+section.third-section {
+    background-color: #001f3f;
+    height: 800px;
+}
+footer {
+    background-color: #fff;
+    height: 500px;
+}
+.orange2 {
+    background-color: #efc480;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    margin-left: 40px;
+}
+footer a {
+    /* margin-left: 300px; */
+}
+.all-a {
+    /* margin-left: 300px; */
+    display: flex;
+    justify-content: space-around;
+    margin-right: 150px;
+}
