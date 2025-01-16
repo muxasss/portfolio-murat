@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { IoSearch, IoLogoInstagram, IoLogoFacebook, IoLogoWhatsapp, IoMailOutline } from 'react-icons/io5';
+
 import './Main.css';
 
 const Main = () => {
@@ -73,10 +73,7 @@ const Main = () => {
       <div className='orange2'></div>
       <div className='all-a'>
 
-      <a href='https://www.instagram.com/mabdiev1977/'><IoLogoInstagram /></a>
-      <a href='https://www.facebook.com/people/%D0%9C%D1%83%D1%80%D0%B0%D1%82-%D0%90%D0%B1%D0%B4%D0%B8%D0%B5%D0%B2/pfbid0u53et5mM3Yq1Da2q6tqDraHcxWGkLVkbj8bh18zH4qPPoFQxqN5yo4MHuvZ1vKrpl/'><IoLogoFacebook /></a>
-      <a href='https://wa.me/+996772456100'><IoLogoWhatsapp /></a>
-      <a href='mabdiev1977@mail.ru'><IoMailOutline /></a>
+      
       </div>
       </footer>
     </div>
