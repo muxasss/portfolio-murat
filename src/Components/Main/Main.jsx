@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GiHamburgerMenu } from "react-icons/gi";
+
 import { IoSearch, IoLogoInstagram, IoLogoFacebook, IoLogoWhatsapp, IoMailOutline } from 'react-icons/io5';
 import './Main.css';
 
@@ -14,7 +14,7 @@ const Main = () => {
     <div>
       {/* Иконка гамбургера, которая будет видна только на мобильных устройствах */}
       <div className="hamburger-menu" onClick={toggleMenu}>
-      <GiHamburgerMenu className="Hamburger-icon" size={30} color="#fff" />
+      
       </div>
       <img className='logo' src='logo-ma.png' />
       {/* Иконка поиска, видна только на десктопах */}
