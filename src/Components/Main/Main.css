@@ -1,6 +1,10 @@
+/* Убираем скроллинг на уровне body */
 body {
     background-color: #001f3f;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Убирает горизонтальный скроллинг */
 }
 
 .menu {
@@ -9,6 +13,7 @@ body {
     flex-wrap: wrap;
     padding: 10px;
     transition: transform 0.3s ease;
+    box-sizing: border-box; /* Учитываем padding в ширину */
 }
 
 
@@ -23,10 +28,8 @@ details {
 summary {
     cursor: pointer;
     font-weight: bold;
-    /* text-align: center; */
     font-size: 20px;
     padding: 5px 0;
-    /* background-color: #003a6d; */
     color: #fff;
     border-radius: 3px;
     transition: background-color 0.3s ease;
@@ -52,31 +55,31 @@ p {
 
 /* Иконка поиска на мобильных устройствах */
 .Search-icon {
-    display: block; /* Показать иконку поиска на мобильных устройствах */
+    display: block;
     position: fixed;
     top: 40px;
-    right: 40px; /* Позиция иконки поиска */
-    z-index: 15; /* Иконка поиска ниже по слоям */
+    right: 40px; 
+    z-index: 15;
 }
 
 /* Адаптивный дизайн для телефонов */
 @media (max-width: 768px) {
     .menu {
-        flex-direction: column; /* Элементы в колонку */
+        flex-direction: column;
         padding-bottom: 10px;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
         background-color: #001f3f;
-        visibility: hidden; /* Скрываем меню по умолчанию */
-        transform: translateY(-100%); /* Меню скрыто */
+        visibility: hidden;
+        transform: translateY(-100%);
         transition: transform 0.3s ease-in-out;
     }
 
     .menu.open {
-        visibility: visible; /* Меню становится видимым */
-        transform: translateY(0); /* Плавно появляется */
+        visibility: visible;
+        transform: translateY(0);
     }
 
     details {
@@ -85,11 +88,11 @@ p {
     }
 
     .hamburger-menu {
-        display: block; /* Показать иконку гамбургера на мобильных устройствах */
+        display: block;
     }
 
     .Search-icon {
-        display: block; /* Иконка поиска видна только на мобильных устройствах */
+        display: block;
     }
 
     summary {
@@ -100,26 +103,16 @@ p {
         font-size: 16px;
     }
 }
-
-/* Стили для десктопов: скрываем иконку поиска */
-@media (min-width: 769px) {
-    .Search-icon {
-        display: none; /* Иконка поиска скрыта на десктопах */
-    }
-
-    .hamburger-menu {
-        display: none; /* Иконка гамбургера скрыта на десктопах */
-    }
-}
-
-/* Стили для изображения */
 .murat-photo {
     height: 150px;
     border-radius: 190px;
-    margin-left: 250px;
-    border: 5px solid;
-    border-color: #fff;
+    display: block;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    margin-left: auto; 
+    margin-right: 20px;  
 }
+
 
 section h1 {
     margin-top: -100px;
@@ -157,6 +150,8 @@ section.second-section {
     margin-top: 150px;
     background-color: #fff;
     height: 800px;
+    border-radius: 30px 30px 30px;
+    overflow-x: hidden; /* Предотвращаем горизонтальный скроллинг */
 }
 section.third-section {
     background-color: #001f3f;
@@ -165,6 +160,7 @@ section.third-section {
 footer {
     background-color: #fff;
     height: 500px;
+    overflow-x: hidden; /* Предотвращаем горизонтальный скроллинг */
 }
 .orange2 {
     background-color: #efc480;
@@ -174,11 +170,43 @@ footer {
     margin-left: 40px;
 }
 footer a {
-    /* margin-left: 300px; */
+    display: inline-block;
 }
 .all-a {
-    /* margin-left: 300px; */
     display: flex;
     justify-content: space-around;
-    margin-right: 150px;
+}
+.logo-insta {
+    color: black;
+}
+.logo-insta:hover {
+    color: #001f3f;
+}
+.logo-facebook {
+    color: black;
+}
+.logo-facebook:hover {
+    color: #001f3f;
+}
+.logo-whatsapp {
+    color: black;
+}
+.logo-whatsapp:hover {
+    color: #001f3f;
+}
+.logo-mail {
+    color: black;
+}
+.logo-mail:hover {
+    color: #001f3f;
+}
+/* Стили для десктопов */
+@media (min-width: 769px) {
+    .Search-icon {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
 }

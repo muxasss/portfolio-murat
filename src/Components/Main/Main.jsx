@@ -73,10 +73,10 @@ const Main = () => {
       <div className='orange2'></div>
       <div className='all-a'>
 
-      <a href='https://www.instagram.com/mabdiev1977/'><IoLogoInstagram /></a>
-      <a href='https://www.facebook.com/people/%D0%9C%D1%83%D1%80%D0%B0%D1%82-%D0%90%D0%B1%D0%B4%D0%B8%D0%B5%D0%B2/pfbid0u53et5mM3Yq1Da2q6tqDraHcxWGkLVkbj8bh18zH4qPPoFQxqN5yo4MHuvZ1vKrpl/'><IoLogoFacebook /></a>
-      <a href='https://wa.me/+996772456100'><IoLogoWhatsapp /></a>
-      <a href='https://mabdiev1977@mail.ru'><IoMailOutline /></a>
+      <a href='https://www.instagram.com/mabdiev1977/'><IoLogoInstagram className='logo-insta' /></a>
+      <a href='https://www.facebook.com/people/%D0%9C%D1%83%D1%80%D0%B0%D1%82-%D0%90%D0%B1%D0%B4%D0%B8%D0%B5%D0%B2/pfbid0u53et5mM3Yq1Da2q6tqDraHcxWGkLVkbj8bh18zH4qPPoFQxqN5yo4MHuvZ1vKrpl/'><IoLogoFacebook className='logo-facebook'/></a>
+      <a href='https://wa.me/+996772456100'><IoLogoWhatsapp className='logo-whatsapp' /></a>
+      <a href='https://mabdiev1977@mail.ru'><IoMailOutline className='logo-mail' /></a>
       </div>
       </footer>
     </div>
