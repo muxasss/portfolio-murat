@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTelegramPlane } from "react-icons/fa";
 import { IoSearch, IoLogoWhatsapp, IoMail } from 'react-icons/io5';
+
 import './Main.css';
 
 const Main = () => {
@@ -38,16 +39,19 @@ const Main = () => {
       <div className='all-menu'>
         <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
           <button className="close-menu" onClick={toggleMenu}>
-            <RxCross1 />
+            <RxCross1 className='cross' />
           </button>
           <img className='logo' src='logo-ma.png' alt="Logo" />
+          <div className='summarys'>
+
           <details>
-            <summary style={{ cursor: 'pointer', fontWeight: 'bold' }}>ОБО МНЕ</summary>
+            <summary style={{ cursor: 'pointer', fontWeight: 'bold' }}>ОБО МНЕ </summary>
             <p className='ppp'>Резюме</p>
             <p>Образование</p>
             <p>Научная степень и звание</p>
             <p>Членство в различных организациях</p>
             <p>Награды</p>
+
           </details>
           <details>
             <summary style={{ cursor: 'pointer', fontWeight: 'bold' }}>ПУБЛИКАЦИИ</summary>
@@ -72,6 +76,7 @@ const Main = () => {
           <details>
             <summary style={{ cursor: 'pointer', fontWeight: 'bold' }}>Общественные работы</summary>
           </details>
+          </div>
           <a href='https://www.facebook.com/people/%D0%9C%D1%83%D1%80%D0%B0%D1%82-%D0%90%D0%B1%D0%B4%D0%B8%D0%B5%D0%B2/pfbid0u53et5mM3Yq1Da2q6tqDraHcxWGkLVkbj8bh18zH4qPPoFQxqN5yo4MHuvZ1vKrpl/'>
             <FaFacebookF className='logo-facebook2'/>
           </a>
@@ -84,6 +89,7 @@ const Main = () => {
           <a href='https://mabdiev1977@mail.ru'>
             <IoMail className='logo-mail2' />
           </a>
+          <a href='https://t.me/Abdiev_Murat'><FaTelegramPlane className='logo-telegram2' /></a>
         </div>
       </div>
       <section>
@@ -105,13 +111,16 @@ const Main = () => {
       <footer>
         <div className='orange2'></div>
         <h3>Murat Abdiev</h3>
+        <div className='poloska'></div>
         <div className='all-a'>
           <a href='https://www.facebook.com/people/%D0%9C%D1%83%D1%80%D0%B0%D1%82-%D0%90%D0%B1%D0%B4%D0%B8%D0%B5%D0%B2/pfbid0u53et5mM3Yq1Da2q6tqDraHcxWGkLVkbj8bh18zH4qPPoFQxqN5yo4MHuvZ1vKrpl/'><FaFacebookF className='logo-facebook'/></a>
           <a href='https://www.instagram.com/mabdiev1977/'><FaInstagram className='logo-insta' /></a>
           <a href='https://wa.me/+996772456100'><IoLogoWhatsapp className='logo-whatsapp' /></a>
           <a href='https://mabdiev1977@mail.ru'><IoMail className='logo-mail' /></a>
+          <a href='https://t.me/Abdiev_Murat'><FaTelegramPlane className='logo-telegram' /></a>
         </div>
-        <p>Сайт разработан pixelcraft</p>
+        <div className='poloska'></div>
+        <a className='pixelcraft' href='https://t.me/pixelcraft_me'>Сайт разработан pixelcraft</a>
       </footer>
     </div>
   );
