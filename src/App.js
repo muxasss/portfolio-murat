@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Main from './Components/Main/Main';
-import AvtorSvidetel from './Components/AvtorSvidetel/AvtorSvidetel';
+// import AvtorSvidetel from './Components/AvtorSvidetel/AvtorSvidetel';
 
 function App() {
   return (
